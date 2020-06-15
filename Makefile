@@ -20,6 +20,6 @@ clean:
 	rm -rf ${C_OBJECTS} build
 
 backup:
-	cp -r ./ $(shell pwd)_bak
+	cp -rf ./ ../backups.d/$(shell basename `pwd`)
 
 .PHONY: backup clean
