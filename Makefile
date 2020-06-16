@@ -1,7 +1,7 @@
 # $@ = target file
 # $< = first dependency
 # $^ = all dependencies
-#
+
 C_SOURCES = $(wildcard Physics/*.c *.c)
 C_HEADERS = $(wildcard Physics/*.h *.h)
 C_OBJECTS = ${C_SOURCES:.c=.o}
