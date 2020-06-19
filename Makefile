@@ -16,10 +16,10 @@ build: ${C_OBJECTS}
 %.o: %.c ${C_HEADERS}
 	${CC} -c $< -o $@
 
+.PHONY: backup clean
+
 clean:
 	rm -rf ${C_OBJECTS} build
 
 backup:
 	cp -rf ./ ../backups.d/$(shell basename `pwd`)
-
-.PHONY: backup clean
