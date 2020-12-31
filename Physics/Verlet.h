@@ -6,7 +6,7 @@
 #include "Particle.h"
 #include "Differentiation.h"
 
-#define DT 0.00001
+#define DT 0.0000001
 
 Particle* next_position(int n, Particle** prev, Particle** current, int i, int nf, double (*potential[])(int, Particle**, int));
 
